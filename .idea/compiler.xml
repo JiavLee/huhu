@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="eureke-server" />
         <module name="huhu-common" />
         <module name="huhu-elasticsearch-api" />
         <module name="huhu-elasticsearch-server" />
         <module name="huhu-member-api" />
         <module name="huhu-member-server" />
-        <module name="huhu-parent" />
         <module name="huhu-redis-cache-api" />
         <module name="huhu-redis-cache-server" />
         <module name="huhu-website" />
+        <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-server" target="1.5" />
+      <module name="eureke-server" target="1.5" />
       <module name="huhu-common" target="1.5" />
       <module name="huhu-elasticsearch-api" target="1.5" />
       <module name="huhu-elasticsearch-server" target="1.5" />
@@ -27,6 +31,7 @@
       <module name="huhu-redis-cache-api" target="1.5" />
       <module name="huhu-redis-cache-server" target="1.5" />
       <module name="huhu-website" target="1.5" />
+      <module name="zuul-server" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
