@@ -12,6 +12,13 @@
         <module>config-server</module>
         <module>eureke-server</module>
         <module>zuul-server</module>
+        <module>huhu-common</module>
+        <module>huhu-elasticsearch-api</module>
+        <module>huhu-elasticsearch-server</module>
+        <module>huhu-member-api</module>
+        <module>huhu-member-server</module>
+        <module>huhu-redis-cache-api</module>
+        <module>huhu-redis-cache-server</module>
     </modules>
 
 
