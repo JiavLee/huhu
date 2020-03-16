@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/huhu-common/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-website/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-member-api/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-member-server/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-redis-cache-api/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-redis-cache-server/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-elasticsearch-api/pom.xml" />
+        <option value="$PROJECT_DIR$/huhu-elasticsearch-server/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
