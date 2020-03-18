@@ -11,7 +11,6 @@
         <module name="huhu-common" />
         <module name="huhu-elasticsearch-api" />
         <module name="huhu-elasticsearch-server" />
-        <module name="huhu-member-api" />
         <module name="huhu-member-server" />
         <module name="huhu-redis-cache-api" />
         <module name="huhu-redis-cache-server" />
@@ -20,18 +19,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config-server" target="1.5" />
-      <module name="eureke-server" target="1.5" />
-      <module name="huhu-common" target="1.5" />
-      <module name="huhu-elasticsearch-api" target="1.5" />
-      <module name="huhu-elasticsearch-server" target="1.5" />
-      <module name="huhu-member-api" target="1.5" />
-      <module name="huhu-member-server" target="1.5" />
-      <module name="huhu-parent" target="1.5" />
-      <module name="huhu-redis-cache-api" target="1.5" />
-      <module name="huhu-redis-cache-server" target="1.5" />
-      <module name="huhu-website" target="1.5" />
-      <module name="zuul-server" target="1.5" />
+      <module name="config-server" target="1.8" />
+      <module name="eureke-server" target="1.8" />
+      <module name="huhu-common" target="1.8" />
+      <module name="huhu-elasticsearch-api" target="1.8" />
+      <module name="huhu-elasticsearch-server" target="1.8" />
+      <module name="huhu-member-api" target="1.8" />
+      <module name="huhu-member-server" target="1.8" />
+      <module name="huhu-parent" target="1.8" />
+      <module name="huhu-redis-cache-api" target="1.8" />
+      <module name="huhu-redis-cache-server" target="1.8" />
+      <module name="huhu-website" target="1.8" />
+      <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
