@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="apollo-server" />
         <module name="config-server" />
         <module name="eureke-server" />
         <module name="huhu-common" />
@@ -19,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="apollo-server" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="eureke-server" target="1.8" />
       <module name="huhu-common" target="1.8" />

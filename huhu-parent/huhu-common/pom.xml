@@ -11,15 +11,5 @@
 
     <artifactId>huhu-common</artifactId>
     <version>1.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    </dependencies>
-
+<!--不需要任何依赖,只提供简单的通用工具类-->
 </project>

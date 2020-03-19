@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/apollo-server/apollo-server.iml" filepath="$PROJECT_DIR$/apollo-server/apollo-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/huhu-parent/config-server/config-server.iml" filepath="$PROJECT_DIR$/huhu-parent/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/huhu-parent/eureke-server/eureke-server.iml" filepath="$PROJECT_DIR$/huhu-parent/eureke-server/eureke-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/huhu.iml" filepath="$PROJECT_DIR$/huhu.iml" />

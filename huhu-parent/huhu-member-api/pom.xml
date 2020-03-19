@@ -11,4 +11,12 @@
 
     <artifactId>huhu-member-api</artifactId>
     <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>top.banbianjia</groupId>
+            <artifactId>huhu-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
 </project>
