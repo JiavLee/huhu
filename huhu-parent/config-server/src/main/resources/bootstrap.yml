@@ -10,6 +10,7 @@ spring:
           uri: https://github.com/JiavLee/huhuConfigMSG
 #          username: 不需要账号和密码了
 #          password:  不需要
+#注册到eureka
 eureka:
   client:
     serviceUrl:

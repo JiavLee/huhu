@@ -14,5 +14,6 @@
     <file url="file://$PROJECT_DIR$/huhu-parent/huhu-redis-cache-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huhu-parent/zuul-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/huhu-website" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/huhu-website/src/main/resources/hello.html" charset="UTF-8" />
   </component>
 </project>

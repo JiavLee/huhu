@@ -1,6 +1,8 @@
 package top.banbianjia.cloud.member.mapper;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
 import top.banbianjia.cloud.member.domain.User;
 
 public interface UserMapper {
@@ -13,4 +15,8 @@ public interface UserMapper {
     List<User> selectAll();
 
     int updateByPrimaryKey(User record);
+
+    User selectByNameAndPassword(User user);
+
+    User selectTest(@Param("name")String name,@Param("password")String password);
 }
