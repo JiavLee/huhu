@@ -12,4 +12,10 @@
     <artifactId>huhu-common</artifactId>
     <version>1.0</version>
 <!--不需要任何依赖,只提供简单的通用工具类-->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,9 +1,17 @@
 package top.banbianjia.cloud.member.domain;
 
-public class User {
-    private Long id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import top.banbianjia.cloud.common.domian.BaseDomain;
 
+
+@AllArgsConstructor
+@NoArgsConstructor
+public class User extends BaseDomain {
     private String name;
+
+    private String tel;
 
     private String password;
 
@@ -21,20 +29,20 @@ public class User {
 
     private String profession;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public String getPassword() {

@@ -38,9 +38,15 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
+            <groupId>top.banbianjia</groupId>
+            <artifactId>huhu-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.4</version>
+            <version>1.2.38</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
