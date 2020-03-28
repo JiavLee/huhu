@@ -15,8 +15,4 @@ public class UserServiceImpl implements IUserServer {
         return userMapper.selectByPrimaryKey(user.getId());
     }
 
-    @Override
-    public User selectByNameAndPassword(User user) {
-        return userMapper.selectByNameAndPassword(user);
-    }
 }

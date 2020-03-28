@@ -4,6 +4,7 @@
     <resultMap id="BaseResultMap" type="top.banbianjia.cloud.member.domain.User">
         <id column="id" jdbcType="BIGINT" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="tel" jdbcType="VARCHAR" property="tel"/>
         <result column="password" jdbcType="VARCHAR" property="password"/>
         <result column="personal_statement" jdbcType="VARCHAR" property="personal_statement"/>
         <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
@@ -19,11 +20,11 @@
   </delete>
     <insert id="insert" keyColumn="id" keyProperty="id" parameterType="top.banbianjia.cloud.member.domain.User"
             useGeneratedKeys="true">
-    insert into user (name, password, personal_statement, 
+    insert into user (tel,name, password, personal_statement,
       avatar, sex, place_of_residence, 
       industry, company, profession
       )
-    values (#{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{personal_statement,jdbcType=VARCHAR}, 
+    values (#{tel,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{personal_statement,jdbcType=VARCHAR},
       #{avatar,jdbcType=VARCHAR}, #{sex,jdbcType=BIT}, #{place_of_residence,jdbcType=VARCHAR}, 
       #{industry,jdbcType=VARCHAR}, #{company,jdbcType=VARCHAR}, #{profession,jdbcType=VARCHAR}
       )
@@ -31,6 +32,7 @@
     <update id="updateByPrimaryKey" parameterType="top.banbianjia.cloud.member.domain.User">
     update user
     set name = #{name,jdbcType=VARCHAR},
+    tel = #{tel,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       personal_statement = #{personal_statement,jdbcType=VARCHAR},
       avatar = #{avatar,jdbcType=VARCHAR},
@@ -42,26 +44,20 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
     <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select id, name, password, personal_statement, avatar, sex, place_of_residence, industry, 
+    select id, tel, name, password, personal_statement, avatar, sex, place_of_residence, industry,
     company, profession
     from user
     where id = #{id,jdbcType=BIGINT}
   </select>
     <select id="selectAll" resultMap="BaseResultMap">
-    select id, name, password, personal_statement, avatar, sex, place_of_residence, industry, 
+    select id, tel, name, password, personal_statement, avatar, sex, place_of_residence, industry,
     company, profession
     from user
   </select>
-    <select id="selectByNameAndPassword" resultMap="BaseResultMap">
-      select id, name, personal_statement, avatar, sex, place_of_residence, industry,
+    <select id="selectUserByNameOrTelAndPassword" resultMap="BaseResultMap">
+        select id, tel, name, password, personal_statement, avatar, sex, place_of_residence, industry,
     company, profession
     from user
-    where name = #{name} and password=#{password}
-    </select>
-    <select id="selectTest" resultMap="BaseResultMap">
-        select * from user
-        <trim prefix="where" prefixOverrides="and|or">
-            and id=#{name}
-        </trim>
+    where (password=#{password} and name=#{name}) or (password=#{password} and tel=#{tel} )
     </select>
 </mapper>
