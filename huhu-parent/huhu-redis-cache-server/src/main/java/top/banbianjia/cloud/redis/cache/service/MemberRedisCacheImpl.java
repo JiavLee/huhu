@@ -22,7 +22,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/redis")
 public class MemberRedisCacheImpl implements IMemberCache {
-    public static final String PACKAGE_BEAN_NAME = "AppVersionRepository";
+//    public static final String PACKAGE_BEAN_NAME = "MemberRedisCacheImpl";
     @Autowired
     private JedisPool pool;
 

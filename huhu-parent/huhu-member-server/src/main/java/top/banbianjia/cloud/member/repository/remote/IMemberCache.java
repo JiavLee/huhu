@@ -12,7 +12,7 @@ import top.banbianjia.cloud.common.prekey.KeyPrefix;
 import java.util.Map;
 
 
-//@FeignClient(name = "redis-server")
+@FeignClient(name = "redis-server")
 public interface IMemberCache {
     /**
      * 设置进入缓存
