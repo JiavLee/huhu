@@ -4,4 +4,4 @@
 *.iml
 rebel.xml
 codeStyleConfig.xml
-.idea/**
+.idea/
