@@ -1,4 +1,4 @@
-package top.banbianjia.huhu.coloud.remote;
+package top.banbianjia.huhu.coloud.zuul.remote;
 
 
 import org.springframework.cloud.openfeign.FeignClient;

@@ -9,6 +9,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ApolloServer {
     public static void main(String[] args) {
         SpringApplication.run(ApolloServer.class);
-        System.out.println("1");
     }
 }
