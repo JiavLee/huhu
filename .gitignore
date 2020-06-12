@@ -1,5 +1,7 @@
+.gitignore
 *.rebel.xml.bak
 *.rebel-remote.xml.bak
 *.iml
-*.xml
+rebel.xml
 codeStyleConfig.xml
+.idea/
