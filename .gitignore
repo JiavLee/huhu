@@ -1,2 +1,5 @@
-.rebel.xml.bak
-.rebel-remote.xml.bak
+*.rebel.xml.bak
+*.rebel-remote.xml.bak
+*.iml
+*.xml
+codeStyleConfig.xml
